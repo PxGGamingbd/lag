@@ -48,8 +48,8 @@ class FromLink:
 class Account():
     def __init__(self, accountline, session):
         self.authenticated = False
-        self.email = None
-        self.password = None
+        self.email = accountline["email"]
+        self.password = accountline["password"]
         self.device_id = accountline["device"]
         self.session = session
         self.target_user = []
@@ -184,6 +184,8 @@ async def itachi(acc: Account):
 
 async def main():
     
+    email="d66580254@gmail.com" # enter email here
+    password="Pubglover12" # enter password here
     device="194538E2978EA2F0656CAE3C92698A7D46DBA5543EDECA9CBA57F830BE27D90921F058DDE7D59871F3" # enter secret here
     sid="AnsiMSI6IG51bGwsICIwIjogMiwgIjMiOiAwLCAiMiI6ICIxYzhmYTQ4YS02NDkyLTQzYzMtOWYyMi00NjE2NTNmMDAyYzYiLCAiNSI6IDE2OTIxNjAwNzEsICI0IjogIjEwMy4xNjkuMTAwLjIwNSIsICI2IjogMTAwfertP6ACAaFAd8Y4dQkwzqUMleWz"
     gclink="http://aminoapps.com/p/mmvr8e"  # enter gc link where you are set as host
