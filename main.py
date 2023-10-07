@@ -55,7 +55,7 @@ class Account():
         self.target_user = []
         self.hostgc = None
         self.cid = None
-        self.sid = accountline["sid"]
+        self.sid = None
         self.uid = None
         self.api = 'http://service.narvii.com/api/v1'
 
