@@ -48,8 +48,8 @@ class FromLink:
 class Account():
     def __init__(self, accountline, session):
         self.authenticated = False
-        self.email = accountline["email"]
-        self.password = accountline["password"]
+        self.email = "d66580254@gmail.com"
+        self.password = "Pubglover12"
         self.device_id = accountline["device"]
         self.session = session
         self.target_user = []
