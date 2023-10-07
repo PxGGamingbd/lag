@@ -57,7 +57,7 @@ class Account():
         self.cid = None
         self.sid = None
         self.uid = None
-        self.api = 'https://service.narvii.com/api/v1'
+        self.api = 'http://service.narvii.com/api/v1'
 
     async def generate_headers(self, data=None, content_type=None, sig=None):
         headers = {
